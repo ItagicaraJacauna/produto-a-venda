@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Vendas</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+    <header>
+        <h1>MESA E ESTILO</h1>
+        <nav>
+          <button class="menu-btn">Home</button>
+          <button class="menu-btn" onclick="abrirCarrinho()">Carrinho de Compras</button>
+        </nav>
+      </header>
+      
+  <div id="product1" class="product">
+    <div class="main-image-container">
+      <img id="mainImage" src="imagens/Jogo de talheres bicolor.png" alt="Produto 1 Imagem 1">
+    </div>
+    <div class="thumbnails">
+      <img class="thumbnail" src="imagens/garfo bicolor.png" alt="Produto 1 Imagem 2" onclick="openModal('imagens/garfo bicolor.png')">
+      <img class="thumbnail" src="imagens/colher bicolor.png" alt="Produto 1 Imagem 3" onclick="openModal('imagens/colher bicolor.png')">
+    </div>
+  
+    <div class="product-description">
+        <h2>Jogo de talheres 5 peças Bicolor</h2>
+    <p>- Composto por 05 peças, sendo 01 garfo de mesa, 01 faca de mesa, 01 colher de mesa, 01 garfo de sobremesa e 01 colher de chá.</p>
+        <p>- Eles podem parecer um detalhe, mas bons talheres fazem toda a diferença em uma mesa posta.</p> Eles são funcionais, mas também são belos, elegantes, moderninhos e charmosos.
+        <p>- O básico é chic, com o inox não tem erro, faça bonito em qualquer ocasião.</p>
+        - Garantia do fornecedor de 90 dias contra defeitos de fabricação.</p>
+    <p>Valor: R$ 100,00</p>
+    <div class="close-bnt">
+    <button onclick="adicionarAoCarrinho('Produto 1', 100.00)">Adicionar ao Carrinho</button></div>
+  </div>
+</div>
+
+
+<div id="product2" class="product">
+    <div class="main-image-container">
+      <img id="mainImage" src="imagens/aparelho de jantar 1.png" alt="Produto 2 Imagem 2">
+    </div>
+    <div class="thumbnails">
+      <img class="thumbnail" src="imagens/aparelho de jantar.png" alt="Produto 2 Imagem 2" onclick="openModal('imagens/aparelho de jantar)">
+      <img class="thumbnail" src="imagens/prato brinde.png" alt="Produto 2 Imagem 3" onclick="openModal('imagens/prato brinde')">
+    </div>
+  
+    <div class="product-description">
+        <h2>Aparelho de Jantar e Chá 32 Peças Holiday</h2>
+    <p>Imagine uma mesa elegante e casual, adornada com um conjunto de louça que combina estilo minimalista, linhas limpas e superfícies brancas suaves, em formas clássicas, seja quadradas ou redondas.</p>
+        <p>- Este conjunto de louça não é apenas funcional, mas também é o presente perfeito para aqueles que gostam de cozinhar ou adoram receber convidados.</p><p>Imagine a alegria deles ao receberem este conjunto embalado e pronto para brilhar em qualquer ocasião.</p> 
+        <p> - Garantia do fornecedor de 90 dias contra defeitos de fabricação.</p>
+    <p>Valor: R$ 247,00</p>
+    <div class="close-bnt">
+    <button onclick="adicionarAoCarrinho('Produto 2', 247.00)">Adicionar ao Carrinho</button></div>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+
+<div class="footer">
+    Atividade JavaScript 1 Por: Itagiçara em Novembro 2023
+  </div>
+  
+</html>
+
